@@ -1,1 +1,95 @@
 # statistik1
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Score Sheet Basket - Lengkap</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid #000; padding: 6px; text-align: center; }
+    input[type="text"], input[type="number"] {
+      width: 100%; border: none; text-align: center; box-sizing: border-box;
+    }
+    textarea { width: 100%; height: 80px; box-sizing: border-box; }
+    h1, h2, h3 { text-align: center; }
+    .print-button { text-align: center; margin-top: 20px; }
+    @media print {
+      .print-button { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Score Sheet Pertandingan Bola Basket</h1>
+
+  <table>
+    <tr>
+      <td>Tanggal</td>
+      <td><input type="text" placeholder="DD/MM/YYYY"></td>
+      <td>Waktu</td>
+      <td><input type="text" placeholder="HH:MM"></td>
+    </tr>
+    <tr>
+      <td>Tempat</td>
+      <td colspan="3"><input type="text" placeholder="Nama Lapangan/Tempat"></td>
+    </tr>
+  </table>
+
+  <h2>Informasi Tim</h2>
+  <table>
+    <tr>
+      <th>Tim A</th>
+      <th>Tim B</th>
+    </tr>
+    <tr>
+      <td><input type="text" placeholder="Nama Tim A"></td>
+      <td><input type="text" placeholder="Nama Tim B"></td>
+    </tr>
+  </table>
+
+  <h2>Skor per Kuarter</h2>
+  <table>
+    <tr>
+      <th>Kuarter</th>
+      <th>Tim A</th>
+      <th>Tim B</th>
+    </tr>
+    <tr><td>Q1</td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td>Q2</td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td>Q3</td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td>Q4</td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td>Total</td><td><input type="number"></td><td><input type="number"></td></tr>
+  </table>
+
+  <h2>Daftar Pemain & Statistik</h2>
+
+  <h3>Tim A</h3>
+  <table>
+    <tr>
+      <th>No</th><th>Nama Pemain</th><th>Poin</th><th>Assist</th><th>Rebound</th><th>Pelanggaran</th>
+    </tr>
+    <!-- Tambahkan baris pemain sesuai kebutuhan -->
+    <tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td></tr>
+  </table>
+
+  <h3>Tim B</h3>
+  <table>
+    <tr>
+      <th>No</th><th>Nama Pemain</th><th>Poin</th><th>Assist</th><th>Rebound</th><th>Pelanggaran</th>
+    </tr>
+    <!-- Tambahkan baris pemain sesuai kebutuhan -->
+    <tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td></tr>
+    <tr><td><input type="number"></td><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td><td><input type="number"></td></tr>
+  </table>
+
+  <h2>Catatan Tambahan</h2>
+  <textarea placeholder="Catatan seperti pelanggaran, strategi, cedera, dll."></textarea>
+
+  <div class="print-button">
+    <button onclick="window.print()">Cetak Score Sheet</button>
+  </div>
+</body>
+</html>
